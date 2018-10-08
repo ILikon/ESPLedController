@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEDS Control Panel</title>
+    <style>
+        div.colorPrev {
+            border: 2px solid black;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            background-color: red;
+            border-radius: 5px;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>LEDS Control Panel</h1>
+    <form action="/" method="POST">
+        <div style="display: flex;flex-wrap: wrap;">
+            <div style="padding: 1em;">
+                <div class="colorPrev" id="C1">C1</div><br>
+                R <input name="C1R" id="C1R" type="range" min=0 max=1023 value=0 onchange="updateValues('C1')"> <span id="C1Rv">0</span><br>
+                G <input name="C1G" id="C1G" type="range" min=0 max=1023 value=0 onchange="updateValues('C1')"> <span id="C1Gv">0</span><br>
+                B <input name="C1B" id="C1B" type="range" min=0 max=1023 value=0 onchange="updateValues('C1')"> <span id="C1Bv">0</span><br>
+            </div>
+            <div style="padding: 1em;">
+                <div class="colorPrev" id="C2">C2</div><br>
+                R <input name="C2R" id="C2R" type="range" min=0 max=1023 value=0 onchange="updateValues('C2')"> <span id="C2Rv">0</span><br>
+                G <input name="C2G" id="C2G" type="range" min=0 max=1023 value=0 onchange="updateValues('C2')"> <span id="C2Gv">0</span><br>
+                B <input name="C2B" id="C2B" type="range" min=0 max=1023 value=0 onchange="updateValues('C2')"> <span id="C2Bv">0</span><br>
+            </div>
+        </div>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+    <script>
+        updateValues("C1");
+        updateValues("C2");
+        function updateValues(id) {
+          var col, r, g, b;
+          r = document.getElementById(id+"R").value;
+          g = document.getElementById(id+"G").value;
+          b = document.getElementById(id+"B").value;
+          col = "rgb(" + r/4 + "," + g/4 + "," + b/4 + ")";
+          document.getElementById(id+"Rv").innerHTML = r;
+          document.getElementById(id+"Gv").innerHTML = g;
+          document.getElementById(id+"Bv").innerHTML = b;
+          document.getElementById(id).style.backgroundColor = col;
+      	}
+    </script>
+</body>
+</html>
+
+<!--
+"<!DOCTYPE html>\
+<html>\
+<head>\
+    <title>LEDS Control Panel</title>\
+    <style>\
+        div.colorPrev {\
+            border: 2px solid black;\
+            text-align: center;\
+            font-size: 20px;\
+            font-weight: bold;\
+            width: 200px;\
+            height: 40px;\
+            line-height: 40px;\
+            background-color: red;\
+            border-radius: 5px;\
+            color: white\
+        }\
+    </style>\
+</head>\
+<body>\
+    <h1>LEDS Control Panel</h1>\
+    <form action=\"/\" method=\"POST\">\
+        <div style=\"display: flex;flex-wrap: wrap;\">\
+            <div style=\"padding: 1em;\">\
+                <div class=\"colorPrev\" id=\"C1\">C1</div><br>\
+                R <input name=\"C1R\" id=\"C1R\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C1')\"> <span id=\"C1Rv\">0</span><br>\
+                G <input name=\"C1G\" id=\"C1G\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C1')\"> <span id=\"C1Gv\">0</span><br>\
+                B <input name=\"C1B\" id=\"C1B\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C1')\"> <span id=\"C1Bv\">0</span><br>\
+            </div>\
+            <div style=\"padding: 1em;\">\
+                <div class=\"colorPrev\" id=\"C2\">C2</div><br>\
+                R <input name=\"C2R\" id=\"C2R\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C2')\"> <span id=\"C2Rv\">0</span><br>\
+                G <input name=\"C2G\" id=\"C2G\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C2')\"> <span id=\"C2Gv\">0</span><br>\
+                B <input name=\"C2B\" id=\"C2B\" type=\"range\" min=0 max=1023 value=0 onchange=\"updateValues('C2')\"> <span id=\"C2Bv\">0</span><br>\
+            </div>\
+        </div>\
+        <br>\
+        <input type=\"submit\" value=\"Send\">\
+    </form>\
+    <script>\
+        updateValues(\"C1\");\
+        updateValues(\"C2\");\
+        function updateValues(id) {\
+          var col, r, g, b;\
+          r = document.getElementById(id+\"R\").value;\
+          g = document.getElementById(id+\"G\").value;\
+          b = document.getElementById(id+\"B\").value;\
+          col = \"rgb(\" + r/4 + \",\" + g/4 + \",\" + b/4 + \")\";\
+          document.getElementById(id+\"Rv\").innerHTML = r;\
+          document.getElementById(id+\"Gv\").innerHTML = g;\
+          document.getElementById(id+\"Bv\").innerHTML = b;\
+          document.getElementById(id).style.backgroundColor = col;\
+      	}\
+    </script>\
+</body>\
+</html>"
+-->
