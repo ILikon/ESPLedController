@@ -51,20 +51,17 @@ https://github.com/ILikon/TabletCompanion
 Video preview:
 
 ### Building the Led controller
-Unfortunately I currently have no tutorial on how to build the led controller. Maybe in the future I will be able to dedicate some time to write it. Meanwhile, I leave here the components I used and some tutorials that I used to help to get you going.
+Unfortunately I currently have no tutorial on how to build the led controller. Maybe in the future I will be able to dedicate some time to write it. Meanwhile, I leave here the components I used and some tutorials from where I learned to help to get you going.
 
 Components:
- - D1 mini by WeMos, easy to use ESP8266 circuit:
-https://www.aliexpress.com/item/D1-mini-V2-Mini-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266/32681374223.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd
- - DC Power Shield V1.1.0 for WEMOS D1 mini, for easy pluging to power:
-https://www.aliexpress.com/item/DC-Power-Shield-V1-1-0-for-WEMOS-D1-mini/32837758572.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd
- - ProtoBoard Shield for WeMos D1 mini, to allow me to assemble the amplifiers in a small space:https://www.aliexpress.com/item/ProtoBoard-Shield-for-WeMos-D1-mini-double-sided-perf-board-Compatible/32823336161.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd
- - 12v led amplifiers, requires some reverse engeneering but provides a cheap and compact way to drive the led strips:
-https://www.aliexpress.com/item/Free-shipping-Hot-20pcs-lot-led-amplifier-for-rgb-strip-light-mini-signal-amplifier-12V/729234432.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd
+ - [D1 mini by WeMos](https://www.aliexpress.com/item/D1-mini-V2-Mini-NodeMcu-4M-bytes-Lua-WIFI-Internet-of-Things-development-board-based-ESP8266/32681374223.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - easy to use ESP8266 circuit
+ - [DC Power Shield V1.1.0 for WEMOS D1 mini](https://www.aliexpress.com/item/DC-Power-Shield-V1-1-0-for-WEMOS-D1-mini/32837758572.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - for easy pluging to power
+ - [ProtoBoard Shield for WeMos D1 mini](https://www.aliexpress.com/item/ProtoBoard-Shield-for-WeMos-D1-mini-double-sided-perf-board-Compatible/32823336161.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - to allow me to assemble the amplifiers in a small volume
+ - [12v led amplifiers](https://www.aliexpress.com/item/Free-shipping-Hot-20pcs-lot-led-amplifier-for-rgb-strip-light-mini-signal-amplifier-12V/729234432.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - requires some reverse engeneering but provides a cheap and compact way to drive the led strips
  - In my case I also needed some resistors to interface with the drivers, it will depend on the model.
 
 Tutorials:
-https://www.youtube.com/watch?v=7Dv70ci-MOw
-https://www.instructables.com/id/Esp8266Websockets-RGB-LED-controller/
-https://perso.aquilenet.fr/~sven337/english/2015/01/19/Tearing-down-a-RGB-LED-strip-amplifier.html
+ - https://www.youtube.com/watch?v=7Dv70ci-MOw
+ - https://www.instructables.com/id/Esp8266Websockets-RGB-LED-controller/
+ - https://perso.aquilenet.fr/~sven337/english/2015/01/19/Tearing-down-a-RGB-LED-strip-amplifier.html
 
