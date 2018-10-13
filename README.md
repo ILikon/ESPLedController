@@ -44,7 +44,10 @@ https://github.com/ILikon/WebSocketPlugins
 https://github.com/ILikon/AudioReporter
  - The final project which includes all this functionallity and even more:
 https://github.com/ILikon/TabletCompanion
- - Video preview:
+
+Video preview:
+ 
+[![](https://img.youtube.com/vi/je1WfeeDfdk/0.jpg)](https://www.youtube.com/watch?v=je1WfeeDfdk)
 
 ### Building the Led controller
 Unfortunately I currently have no tutorial on how to build the led controller. Maybe in the future I will be able to dedicate some time to write it. Meanwhile, I leave here the components I used and some tutorials from where I learned to help to get you going.
