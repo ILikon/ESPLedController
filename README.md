@@ -36,19 +36,15 @@ Note: The reaction to sound is provided by scripts running in the PC. These can 
 
 
 ## Links
-I used Visual Studio Community with the excelent Visual Micro plugin to develop this project:
+ - I used Visual Studio Community with the excelent Visual Micro plugin to develop this project:
 https://www.visualmicro.com/
-
-Rainmeter Websocket plugin to communicate with the ESP8266: 
+ - Rainmeter Websocket plugin to communicate with the ESP8266: 
 https://github.com/ILikon/WebSocketPlugins
-
-Rainmeter skin to process audio and provide an interface:
+ - Rainmeter skin to process audio and provide an interface:
 https://github.com/ILikon/AudioReporter
-
-The final project which includes all this functionallity and even more:
+ - The final project which includes all this functionallity and even more:
 https://github.com/ILikon/TabletCompanion
-
-Video preview:
+ - Video preview:
 
 ### Building the Led controller
 Unfortunately I currently have no tutorial on how to build the led controller. Maybe in the future I will be able to dedicate some time to write it. Meanwhile, I leave here the components I used and some tutorials from where I learned to help to get you going.
@@ -58,7 +54,7 @@ Components:
  - [DC Power Shield V1.1.0 for WEMOS D1 mini](https://www.aliexpress.com/item/DC-Power-Shield-V1-1-0-for-WEMOS-D1-mini/32837758572.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - for easy pluging to power
  - [ProtoBoard Shield for WeMos D1 mini](https://www.aliexpress.com/item/ProtoBoard-Shield-for-WeMos-D1-mini-double-sided-perf-board-Compatible/32823336161.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - to allow me to assemble the amplifiers in a small volume
  - [12v led amplifiers](https://www.aliexpress.com/item/Free-shipping-Hot-20pcs-lot-led-amplifier-for-rgb-strip-light-mini-signal-amplifier-12V/729234432.html?spm=a2g0s.9042311.0.0.76dc4c4dtn1FUd) - requires some reverse engeneering but provides a cheap and compact way to drive the led strips
- - In my case I also needed some resistors to interface with the drivers, it will depend on the model.
+ - In my case I also needed some resistors to interface with the drivers, it will depend on the model
 
 Tutorials:
  - https://www.youtube.com/watch?v=7Dv70ci-MOw
